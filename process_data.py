@@ -53,7 +53,7 @@ def process_endpoint_1_data():
     parts = []
     seen = set()
 
-    total_chunks = 49
+    total_chunks = 59
 
     for i, chunk in enumerate(chunks, start=1):
         percent = (i / total_chunks) * 100

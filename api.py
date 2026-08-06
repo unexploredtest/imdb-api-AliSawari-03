@@ -24,6 +24,10 @@ def get_same_director_writer_alive():
     # Slice data for the requested page
     paginated_data = endpoint_1_df.iloc[start_idx:end_idx][["primaryName", "title", "birthYear"]].to_dict(orient="records")
 
+    # Convert birthYear to integer
+    for record in paginated_data:
+        record['birthYear'] = int(record['birthYear'])
+
     # 3. Response JSON layout
     return jsonify({
         "total": total_count,

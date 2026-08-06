@@ -34,7 +34,7 @@ docker compose up --build
 
 برای امتحان دستور زیر را اجرا کنید:
  ```bash
-curl -fsS "http://127.0.0.1:5000/api/v1/same-director-writer-alive?page=1&per_page=2"
+curl -fsS "http://127.0.0.1:5000/api/v1/same-director-writer-alive?page=7&per_page=2"
 ```
 
 ## اندپوینت ۲
